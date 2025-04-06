@@ -17,6 +17,6 @@ function golden_section(f, a, b, epsilon)
 end
 
 f(t) = t^2 + t + 1
-xmin = golden_section(f, -3, 3, 0,01)
+xmin = golden_section(f, -3, 3, 0.01)
 println(xmin)
 println(f(xmin))

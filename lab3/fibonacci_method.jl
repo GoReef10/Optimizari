@@ -11,7 +11,7 @@ function get_fibonacci_sequence(a, b, epsilon)
     return fib
 end
 
-function fib_method(f, a, b, epsilon)
+function fibonacci_method(f, a, b, epsilon)
     fib = get_fibonacci_sequence(a, b , epsilon)
     n = length(fib)
     lambda = a + fib[n - 2] / fib[n] * (b - a)
@@ -43,6 +43,6 @@ a = -3
 b = 4
 epsilon = 0.01
 println(get_fibonacci_sequence(a, b, epsilon))
-min = fib_method(f, a, b, epsilon)
+min = fibonacci_method(f, a, b, epsilon)
 println(min)
 println(f(min))
